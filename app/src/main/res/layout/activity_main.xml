@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <!-- 상단 로고 START -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/deep_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조선대학교 중앙도서관"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- 상단 로고 END -->
+
+    <!-- 배달 시작하기 버튼 -->
+    <android.widget.Button
+        android:id="@+id/btn_DeliveryStart"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_square_round20_main"
+        android:text="주행 명령"
+        android:textAllCaps="false"
+        android:textColor="@drawable/text_enable"
+        android:textSize="15sp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/text_coo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="가11"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_DeliveryStart"
+        app:layout_constraintStart_toStartOf="@+id/btn_DeliveryStart"
+        app:layout_constraintTop_toBottomOf="@+id/btn_DeliveryStart" />
+
+    <!-- 로봇의 실시간 위치 맵 -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_column="7"
+        android:background="@drawable/bg_map_cut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_coo">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="130dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/back" />
+
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="405dp"
+            android:layout_row="5"
+            android:layout_column="4"
+            android:background="@color/back" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:background="@color/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/robot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:srcCompat="@drawable/circle_fill" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
