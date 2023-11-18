@@ -4,14 +4,13 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="main">@color/blue</color>
-    <color name="main_trans">#592A8FF7</color>
     <color name="background">@color/white</color>
     <color name="background_check">#F2F5FA</color>
 
     <color name="bg">#F7F9FD</color>
 
-    <color name="deep_blue">#303A7B</color>
-    <color name="blue">#4A5FCE</color>
+    <color name="deep_blue">#004383</color>
+    <color name="blue">#0054A5</color>
     <color name="other_blue">#a0bdfd</color>
 
     <color name="unable">#D7D7D7</color>

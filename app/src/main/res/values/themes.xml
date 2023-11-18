@@ -6,9 +6,6 @@
         <!-- 액션바와 타이블바 제거 -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
-        <!-- 상단바 제거
-        <item name="android:windowFullscreen">true</item>-->
     </style>
 
     <style name="Theme.WHAHU_Library_Manager" parent="Base.Theme.WHAHU_Library_Manager" />

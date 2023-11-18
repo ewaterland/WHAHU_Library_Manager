@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                     val y = y_temp
 
                     // 객체 이동
-                    imagemove(image, x, y, 200L)
+                    imagemove(image, y, x, 200L)
 
                     Log.w(ContentValues.TAG, "============ 맵 업데이트 성공 ============")
                     //Toast.makeText(this@MainActivity, "Map Update...", Toast.LENGTH_SHORT).show()
@@ -142,7 +142,7 @@ class MainActivity : AppCompatActivity() {
                     val y = y_temp
 
                     // 객체 이동
-                    imagemove(image, x, y, 200L)
+                    imagemove(image, y, x, 200L)
 
                     Log.w(ContentValues.TAG, "============ 맵 업데이트 성공 ============")
                     //.makeText(this@MainActivity, "Map Update...", Toast.LENGTH_SHORT).show()
